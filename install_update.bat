@@ -1,47 +1,50 @@
 @echo off
 setlocal
 
-echo ComfyUI Client‚ÌƒCƒ“ƒXƒg[ƒ‹/XV‚ğŠJn‚µ‚Ü‚·...
+echo ComfyUI Clientï¿½ÌƒCï¿½ï¿½ï¿½Xï¿½gï¿½[ï¿½ï¿½/ï¿½Xï¿½Vï¿½ï¿½ï¿½Jï¿½nï¿½ï¿½ï¿½Ü‚ï¿½...
 
-REM comfyui-clientƒtƒHƒ‹ƒ_‚ª‘¶İ‚·‚é‚©ƒ`ƒFƒbƒN
-if not exist "comfyui-client" (
-    echo comfyui-clientƒtƒHƒ‹ƒ_‚ªŒ©‚Â‚©‚ç‚È‚¢‚½‚ßAƒNƒ[ƒ“‚µ‚Ü‚·...
-    git clone https://github.com/kahukumumon/comfyui-client.git
+REM comfyui-clientï¿½tï¿½Hï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½İ‚ï¿½ï¿½é‚©ï¿½`ï¿½Fï¿½bï¿½N
+if not exist ".git" (
+    echo comfyui-clientï¿½tï¿½Hï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½ßAï¿½Nï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½...
+    git init
+    git remote add origin https://github.com/kahukumumon/comfyui-client
+    git fetch
+    git checkout -t origin/main
     if %errorlevel% neq 0 (
-        echo ƒNƒ[ƒ“‚É¸”s‚µ‚Ü‚µ‚½B
+        echo ï¿½Nï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Éï¿½ï¿½sï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B
         pause
         exit /b 1
     )
-    echo ƒNƒ[ƒ“‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+    echo ï¿½Nï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B
 ) else (
-    echo comfyui-clientƒtƒHƒ‹ƒ_‚ªŒ©‚Â‚©‚Á‚½‚½‚ßAXV‚µ‚Ü‚·...
+    echo comfyui-clientï¿½tï¿½Hï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßAï¿½Xï¿½Vï¿½ï¿½ï¿½Ü‚ï¿½...
     cd comfyui-client
     if %errorlevel% neq 0 (
-        echo ƒtƒHƒ‹ƒ_‚Ö‚ÌˆÚ“®‚É¸”s‚µ‚Ü‚µ‚½B
+        echo ï¿½tï¿½Hï¿½ï¿½ï¿½_ï¿½Ö‚ÌˆÚ“ï¿½ï¿½Éï¿½ï¿½sï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B
         pause
         exit /b 1
     )
 
-    echo git reset --hard ‚ğÀs‚µ‚Ü‚·...
+    echo git reset --hard ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½Ü‚ï¿½...
     git reset --hard
     if %errorlevel% neq 0 (
-        echo git reset --hard ‚É¸”s‚µ‚Ü‚µ‚½B
+        echo git reset --hard ï¿½Éï¿½ï¿½sï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B
         pause
         exit /b 1
     )
 
-    echo git pull ‚ğÀs‚µ‚Ü‚·...
+    echo git pull ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½Ü‚ï¿½...
     git pull
     if %errorlevel% neq 0 (
-        echo git pull ‚É¸”s‚µ‚Ü‚µ‚½B
+        echo git pull ï¿½Éï¿½ï¿½sï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B
         pause
         exit /b 1
     )
 
     cd ..
-    echo XV‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+    echo ï¿½Xï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B
 )
 
-echo ˆ—‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B
 pause
 endlocal
