@@ -4,13 +4,13 @@ ComfyUIで画像をバッチ処理するための便利ツールです。指定�
 
 ## 🚀 インストール
 
-1. [install_update.bat](https://github.com/kahukumumon/comfyui-client/raw/main/install_update.bat) を右クリックして「名前を付けて保存」を選択
+1. [install_update.bat](https://raw.githubusercontent.com/kahukumumon/comfyui-client/refs/heads/main/install_update.bat) を右クリックして「名前を付けて保存」を選択
 2. 任意の場所（例: C:\comfyui-client）に保存して実行
 3. 自動的にGitHubから最新版がダウンロードされます
 
 ## 🔄 更新
 
-1. [install_update.bat](https://github.com/kahukumumon/comfyui-client/raw/main/install_update.bat) を再度実行するだけ
+1. [install_update.bat](https://raw.githubusercontent.com/kahukumumon/comfyui-client/refs/heads/main/install_update.bat) を再度実行するだけ
 2. 自動的に最新版に更新されます
 
 ## 📋 必要な環境
