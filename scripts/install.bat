@@ -1,27 +1,27 @@
 @echo off
 setlocal
 
-echo ComfyUI Clientã®æ–°è¦ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã‚’é–‹å§‹ã—ã¾ã™...
+echo ComfyUI Client‚ÌV‹KƒCƒ“ƒXƒg[ƒ‹‚ğŠJn‚µ‚Ü‚·...
 
-REM comfyui-clientãƒ•ã‚©ãƒ«ãƒ€ãŒå­˜åœ¨ã™ã‚‹ã‹ãƒã‚§ãƒƒã‚¯
+REM comfyui-clientƒtƒHƒ‹ƒ_‚ª‘¶İ‚·‚é‚©ƒ`ƒFƒbƒN
 if not exist ".git" (
-    echo comfyui-clientãƒ•ã‚©ãƒ«ãƒ€ãŒè¦‹ã¤ã‹ã‚‰ãªã„ãŸã‚ã€åˆæœŸåŒ–ã—ã¾ã™...
+    echo comfyui-clientƒtƒHƒ‹ƒ_‚ªŒ©‚Â‚©‚ç‚È‚¢‚½‚ßA‰Šú‰»‚µ‚Ü‚·...
     git init
     git remote add origin https://github.com/kahukumumon/comfyui-client
     git fetch
     git checkout -t origin/main
     if %errorlevel% neq 0 (
-        echo ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã«å¤±æ•—ã—ã¾ã—ãŸã€‚
+        echo ƒCƒ“ƒXƒg[ƒ‹‚É¸”s‚µ‚Ü‚µ‚½B
         pause
         exit /b 1
     )
-    echo ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãŒå®Œäº†ã—ã¾ã—ãŸã€‚
+    echo ƒCƒ“ƒXƒg[ƒ‹‚ªŠ®—¹‚µ‚Ü‚µ‚½B
 ) else (
-    echo æ—¢ã«Gitãƒªãƒã‚¸ãƒˆãƒªãŒå­˜åœ¨ã—ã¾ã™ã€‚æ›´æ–°ã™ã‚‹å ´åˆã¯ update.bat ã‚’ä½¿ç”¨ã—ã¦ãã ã•ã„ã€‚
+    echo Šù‚ÉGitƒŠƒ|ƒWƒgƒŠ‚ª‘¶İ‚µ‚Ü‚·BXV‚·‚éê‡‚Í update.bat ‚ğg—p‚µ‚Ä‚­‚¾‚³‚¢B
     pause
     exit /b 1
 )
 
-echo ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãŒå®Œäº†ã—ã¾ã—ãŸã€‚
+echo ƒCƒ“ƒXƒg[ƒ‹‚ªŠ®—¹‚µ‚Ü‚µ‚½B
 pause
 endlocal

@@ -1,33 +1,33 @@
 @echo off
 setlocal
 
-echo ComfyUI Clientã®æ›´æ–°ã‚’é–‹å§‹ã—ã¾ã™...
+echo ComfyUI Client‚ÌXV‚ğŠJn‚µ‚Ü‚·...
 
-REM comfyui-clientãƒ•ã‚©ãƒ«ãƒ€ãŒå­˜åœ¨ã™ã‚‹ã‹ãƒã‚§ãƒƒã‚¯
+REM comfyui-clientƒtƒHƒ‹ƒ_‚ª‘¶İ‚·‚é‚©ƒ`ƒFƒbƒN
 if exist ".git" (
-    echo ãƒ­ãƒ¼ã‚«ãƒ«ã®å¤‰æ›´ã‚’ãƒªã‚»ãƒƒãƒˆã—ã¾ã™...
+    echo ƒ[ƒJƒ‹‚Ì•ÏX‚ğƒŠƒZƒbƒg‚µ‚Ü‚·...
     git reset --hard
     if %errorlevel% neq 0 (
-        echo git reset --hard ã«å¤±æ•—ã—ã¾ã—ãŸã€‚
+        echo git reset --hard ‚É¸”s‚µ‚Ü‚µ‚½B
         pause
         exit /b 1
     )
 
-    echo æœ€æ–°ç‰ˆã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™...
+    echo ÅV”Å‚ğƒ_ƒEƒ“ƒ[ƒh‚µ‚Ü‚·...
     git pull
     if %errorlevel% neq 0 (
-        echo git pull ã«å¤±æ•—ã—ã¾ã—ãŸã€‚
+        echo git pull ‚É¸”s‚µ‚Ü‚µ‚½B
         pause
         exit /b 1
     )
 
-    echo æ›´æ–°ãŒå®Œäº†ã—ã¾ã—ãŸã€‚
+    echo XV‚ªŠ®—¹‚µ‚Ü‚µ‚½B
 ) else (
-    echo Gitãƒªãƒã‚¸ãƒˆãƒªãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚æ–°è¦ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹å ´åˆã¯ scripts/install.bat ã‚’ä½¿ç”¨ã—ã¦ãã ã•ã„ã€‚
+    echo GitƒŠƒ|ƒWƒgƒŠ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñBV‹KƒCƒ“ƒXƒg[ƒ‹‚·‚éê‡‚Í scripts/install.bat ‚ğg—p‚µ‚Ä‚­‚¾‚³‚¢B
     pause
     exit /b 1
 )
 
-echo æ›´æ–°ãŒå®Œäº†ã—ã¾ã—ãŸã€‚
+echo XV‚ªŠ®—¹‚µ‚Ü‚µ‚½B
 pause
 endlocal
